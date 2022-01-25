@@ -7,6 +7,6 @@
 
 struct Config {
     static let BASE_URL: String = "https://api.github.com"
-    static let TOKEN: String = "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"
+    static let TOKEN: String = "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"
     static let DEFAULT_PAGE_SIZE: Int = 10
  }

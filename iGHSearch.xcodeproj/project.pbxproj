@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3A731B18279F18A60073DF09 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A731B17279F18A60073DF09 /* AsyncImage.swift */; };
+		3A731B1A279FCF840073DF09 /* Mocks.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3A731B19279FCF840073DF09 /* Mocks.bundle */; };
+		3A731B1C279FD08B0073DF09 /* CombineGithubApiMocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A731B1B279FD08B0073DF09 /* CombineGithubApiMocked.swift */; };
 		3ABB1200279D3E3A00D2AF0A /* iGHSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB11FF279D3E3A00D2AF0A /* iGHSearchApp.swift */; };
 		3ABB1202279D3E3A00D2AF0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB1201279D3E3A00D2AF0A /* ContentView.swift */; };
 		3ABB1204279D3E3E00D2AF0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ABB1203279D3E3E00D2AF0A /* Assets.xcassets */; };
 		3ABB1207279D3E3E00D2AF0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ABB1206279D3E3E00D2AF0A /* Preview Assets.xcassets */; };
 		3ABB1211279D3E3E00D2AF0A /* iGHSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB1210279D3E3E00D2AF0A /* iGHSearchTests.swift */; };
-		3ABB121B279D3E3F00D2AF0A /* iGHSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB121A279D3E3F00D2AF0A /* iGHSearchUITests.swift */; };
-		3ABB121D279D3E3F00D2AF0A /* iGHSearchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB121C279D3E3F00D2AF0A /* iGHSearchUITestsLaunchTests.swift */; };
 		3ABB122D279D697900D2AF0A /* GitRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB122C279D697800D2AF0A /* GitRepository.swift */; };
 		3ABB122F279D71A600D2AF0A /* INetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB122E279D71A600D2AF0A /* INetworkClient.swift */; };
 		3ABB1232279D773900D2AF0A /* GithubSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABB1231279D773900D2AF0A /* GithubSearchViewModel.swift */; };
@@ -37,17 +37,12 @@
 			remoteGlobalIDString = 3ABB11FB279D3E3A00D2AF0A;
 			remoteInfo = iGHSearch;
 		};
-		3ABB1217279D3E3F00D2AF0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3ABB11F4279D3E3A00D2AF0A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3ABB11FB279D3E3A00D2AF0A;
-			remoteInfo = iGHSearch;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3A731B17279F18A60073DF09 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		3A731B19279FCF840073DF09 /* Mocks.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Mocks.bundle; sourceTree = "<group>"; };
+		3A731B1B279FD08B0073DF09 /* CombineGithubApiMocked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineGithubApiMocked.swift; sourceTree = "<group>"; };
 		3ABB11FC279D3E3A00D2AF0A /* iGHSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iGHSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ABB11FF279D3E3A00D2AF0A /* iGHSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iGHSearchApp.swift; sourceTree = "<group>"; };
 		3ABB1201279D3E3A00D2AF0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,9 +50,6 @@
 		3ABB1206279D3E3E00D2AF0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3ABB120C279D3E3E00D2AF0A /* iGHSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iGHSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ABB1210279D3E3E00D2AF0A /* iGHSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iGHSearchTests.swift; sourceTree = "<group>"; };
-		3ABB1216279D3E3F00D2AF0A /* iGHSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iGHSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ABB121A279D3E3F00D2AF0A /* iGHSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iGHSearchUITests.swift; sourceTree = "<group>"; };
-		3ABB121C279D3E3F00D2AF0A /* iGHSearchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iGHSearchUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3ABB122C279D697800D2AF0A /* GitRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepository.swift; sourceTree = "<group>"; };
 		3ABB122E279D71A600D2AF0A /* INetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INetworkClient.swift; sourceTree = "<group>"; };
 		3ABB1231279D773900D2AF0A /* GithubSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchViewModel.swift; sourceTree = "<group>"; };
@@ -87,13 +79,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3ABB1213279D3E3F00D2AF0A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,7 +87,6 @@
 			children = (
 				3ABB11FE279D3E3A00D2AF0A /* iGHSearch */,
 				3ABB120F279D3E3E00D2AF0A /* iGHSearchTests */,
-				3ABB1219279D3E3F00D2AF0A /* iGHSearchUITests */,
 				3ABB11FD279D3E3A00D2AF0A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,7 +96,6 @@
 			children = (
 				3ABB11FC279D3E3A00D2AF0A /* iGHSearch.app */,
 				3ABB120C279D3E3E00D2AF0A /* iGHSearchTests.xctest */,
-				3ABB1216279D3E3F00D2AF0A /* iGHSearchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,17 +130,10 @@
 			isa = PBXGroup;
 			children = (
 				3ABB1210279D3E3E00D2AF0A /* iGHSearchTests.swift */,
+				3A731B19279FCF840073DF09 /* Mocks.bundle */,
+				3A731B1B279FD08B0073DF09 /* CombineGithubApiMocked.swift */,
 			);
 			path = iGHSearchTests;
-			sourceTree = "<group>";
-		};
-		3ABB1219279D3E3F00D2AF0A /* iGHSearchUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3ABB121A279D3E3F00D2AF0A /* iGHSearchUITests.swift */,
-				3ABB121C279D3E3F00D2AF0A /* iGHSearchUITestsLaunchTests.swift */,
-			);
-			path = iGHSearchUITests;
 			sourceTree = "<group>";
 		};
 		3ABB1229279D557100D2AF0A /* api */ = {
@@ -260,24 +236,6 @@
 			productReference = 3ABB120C279D3E3E00D2AF0A /* iGHSearchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3ABB1215279D3E3F00D2AF0A /* iGHSearchUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3ABB1226279D3E3F00D2AF0A /* Build configuration list for PBXNativeTarget "iGHSearchUITests" */;
-			buildPhases = (
-				3ABB1212279D3E3F00D2AF0A /* Sources */,
-				3ABB1213279D3E3F00D2AF0A /* Frameworks */,
-				3ABB1214279D3E3F00D2AF0A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3ABB1218279D3E3F00D2AF0A /* PBXTargetDependency */,
-			);
-			name = iGHSearchUITests;
-			productName = iGHSearchUITests;
-			productReference = 3ABB1216279D3E3F00D2AF0A /* iGHSearchUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -292,10 +250,6 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					3ABB120B279D3E3E00D2AF0A = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 3ABB11FB279D3E3A00D2AF0A;
-					};
-					3ABB1215279D3E3F00D2AF0A = {
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = 3ABB11FB279D3E3A00D2AF0A;
 					};
@@ -316,7 +270,6 @@
 			targets = (
 				3ABB11FB279D3E3A00D2AF0A /* iGHSearch */,
 				3ABB120B279D3E3E00D2AF0A /* iGHSearchTests */,
-				3ABB1215279D3E3F00D2AF0A /* iGHSearchUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -335,13 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3ABB1214279D3E3F00D2AF0A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				3A731B1A279FCF840073DF09 /* Mocks.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,16 +321,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A731B1C279FD08B0073DF09 /* CombineGithubApiMocked.swift in Sources */,
 				3ABB1211279D3E3E00D2AF0A /* iGHSearchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3ABB1212279D3E3F00D2AF0A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3ABB121B279D3E3F00D2AF0A /* iGHSearchUITests.swift in Sources */,
-				3ABB121D279D3E3F00D2AF0A /* iGHSearchUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,11 +333,6 @@
 			isa = PBXTargetDependency;
 			target = 3ABB11FB279D3E3A00D2AF0A /* iGHSearch */;
 			targetProxy = 3ABB120D279D3E3E00D2AF0A /* PBXContainerItemProxy */;
-		};
-		3ABB1218279D3E3F00D2AF0A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3ABB11FB279D3E3A00D2AF0A /* iGHSearch */;
-			targetProxy = 3ABB1217279D3E3F00D2AF0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -613,40 +547,6 @@
 			};
 			name = Release;
 		};
-		3ABB1227279D3E3F00D2AF0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sgz.iGHSearchUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iGHSearch;
-			};
-			name = Debug;
-		};
-		3ABB1228279D3E3F00D2AF0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sgz.iGHSearchUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = iGHSearch;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -673,15 +573,6 @@
 			buildConfigurations = (
 				3ABB1224279D3E3F00D2AF0A /* Debug */,
 				3ABB1225279D3E3F00D2AF0A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3ABB1226279D3E3F00D2AF0A /* Build configuration list for PBXNativeTarget "iGHSearchUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3ABB1227279D3E3F00D2AF0A /* Debug */,
-				3ABB1228279D3E3F00D2AF0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

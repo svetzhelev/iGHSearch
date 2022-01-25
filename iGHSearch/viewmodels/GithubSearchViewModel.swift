@@ -33,7 +33,7 @@ class GithubSearchViewModel: ObservableObject {
         
         let query = searchTerm ?? githubRepository.state.query
         
-        return githubRepository.searcRepositories(query: query!)
+        return githubRepository.searchRepositories(query: query!)
                             .receive(on: DispatchQueue.main)
                             .handleEvents(receiveOutput: { [weak self] repositories in
                                 self?.repositories.append(contentsOf: repositories)

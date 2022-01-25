@@ -37,7 +37,7 @@ class GithubRepository {
         state.totalResults = 0
     }
     
-    func searcRepositories(query: String) -> AnyPublisher<[GitRepository], Error> {
+    func searchRepositories(query: String) -> AnyPublisher<[GitRepository], Error> {
         
         state.page += 1
         

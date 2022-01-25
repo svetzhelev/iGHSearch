@@ -6,31 +6,63 @@
 //
 
 import XCTest
+import Combine
 @testable import iGHSearch
 
 class iGHSearchTests: XCTestCase {
 
+    var subscriptions = Set<AnyCancellable>()
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        subscriptions = .init()
     }
-
+    
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        
+        subscriptions = .init()
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testSearchRepositories() throws {
+        
+        let githubRepository = GithubRepository(githubApi: CombineGithubApi.mocked)
+        let viewModel = GithubSearchViewModel(repository: githubRepository)
+        
+        doSearch(query: "qwerty123456", viewModel: viewModel)
+        
+        XCTAssertEqual(viewModel.repositories.count, Config.DEFAULT_PAGE_SIZE)
+        XCTAssertEqual(githubRepository.state.page, 1)
+        XCTAssertEqual(githubRepository.state.totalResults, 11)
+        XCTAssertEqual(githubRepository.state.query, "qwerty123456")
+        XCTAssert(viewModel.hasMoreToLoad)
+        
+        doSearch(query: "qwerty123456", viewModel: viewModel)
+        
+        XCTAssertEqual(githubRepository.state.page, 2)
+        XCTAssert(!viewModel.hasMoreToLoad)
+        
+        viewModel.reset()
+        XCTAssertEqual(githubRepository.state.page, 0)
+        XCTAssertEqual(githubRepository.state.totalResults, 0)
+        XCTAssertEqual(githubRepository.state.query, nil)
+        XCTAssert(!viewModel.hasMoreToLoad)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    private func doSearch(query: String, viewModel: GithubSearchViewModel) {
+        
+        let e = expectation(description: #function)
+        viewModel.search(searchTerm: query)
+            .handleEvents(receiveCompletion: { completion in
+                switch completion {
+                    case .finished:
+                        e.fulfill()
+                    case .failure(let error):
+                    XCTFail(error.localizedDescription)
+                }
+            })
+            .sink(receiveCompletion: { _ in }, receiveValue: { _ in })
+            .store(in: &subscriptions)
+        
+        waitForExpectations(timeout: 2)
     }
-
 }
